@@ -23,7 +23,7 @@ const About = () => {
               When there's a cool problem to solve, I'm willing to learn what I need to solve it and most of the time, I have fun doing it.
             </p>
             <p className="about__text">
-              Outside of work, I love art, practice combat sports, and reading books.
+              Outside of work, I love to draw, practice combat sports, and read books.
             </p>
           </div>
 
