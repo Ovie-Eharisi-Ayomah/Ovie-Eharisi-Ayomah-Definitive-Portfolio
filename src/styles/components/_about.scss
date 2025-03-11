@@ -1,0 +1,133 @@
+.about {
+  padding: $spacing-16 0;
+  background-color: $white;
+  border-radius: $rounded-lg;
+  box-shadow: $shadow-sm;
+
+  @include md {
+    padding: $spacing-24 0;
+  }
+
+  @include dark-mode {
+    background-color: $dark-bg-800;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-12;
+
+    &__title {
+      font-size: $text-3xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-4;
+      color: $gray-800;
+
+      @include md {
+        font-size: $text-4xl;
+      }
+
+      @include dark-mode {
+        color: $white;
+      }
+
+      &__highlight {
+        color: $blue-600;
+
+        @include dark-mode {
+          color: $purple-400;
+        }
+      }
+    }
+
+    &__underline {
+      width: 5rem;
+      height: 0.25rem;
+      background-color: $blue-600;
+      margin: 0 auto;
+
+      @include dark-mode {
+        background-color: $purple-400;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: $spacing-10;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: $spacing-6;
+    color: $gray-700;
+    font-size: $text-lg;
+    line-height: 1.7;
+
+    @include dark-mode {
+      color: $gray-300;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+  }
+
+  &__card {
+    background-color: $slate-50;
+    padding: $spacing-6;
+    border-radius: $rounded-lg;
+    box-shadow: $shadow-sm;
+
+    @include dark-mode {
+      background-color: $dark-bg-700;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: $spacing-4;
+
+      &__icon {
+        color: $blue-600;
+        margin-right: $spacing-3;
+
+        @include dark-mode {
+          color: $purple-400;
+        }
+      }
+
+      &__title {
+        font-size: $text-xl;
+        font-weight: $font-semibold;
+        color: $gray-800;
+
+        @include dark-mode {
+          color: $white;
+        }
+      }
+    }
+
+    &__list {
+      color: $gray-700;
+      list-style: none;
+
+      @include dark-mode {
+        color: $gray-300;
+      }
+
+      li {
+        margin-bottom: $spacing-3;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

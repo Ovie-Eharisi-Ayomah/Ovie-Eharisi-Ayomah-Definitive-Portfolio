@@ -1,0 +1,95 @@
+// Media query mixins
+@mixin sm {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin dark-mode {
+  .dark & {
+    @content;
+  }
+}
+
+// Flexbox mixins
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin items-center {
+  align-items: center;
+}
+
+@mixin items-start {
+  align-items: flex-start;
+}
+
+@mixin items-end {
+  align-items: flex-end;
+}
+
+@mixin justify-between {
+  justify-content: space-between;
+}
+
+@mixin justify-center {
+  justify-content: center;
+}
+
+@mixin justify-end {
+  justify-content: flex-end;
+}
+
+// Common utility mixins
+@mixin transition {
+  transition: all 0.3s ease;
+}
+
+@mixin shadow-sm {
+  box-shadow: $shadow-sm;
+}
+
+@mixin shadow {
+  box-shadow: $shadow;
+}
+
+@mixin shadow-md {
+  box-shadow: $shadow-md;
+}
+
+// Grid mixins
+@mixin grid {
+  display: grid;
+}
+
+@mixin grid-cols($n) {
+  grid-template-columns: repeat($n, minmax(0, 1fr));
+}

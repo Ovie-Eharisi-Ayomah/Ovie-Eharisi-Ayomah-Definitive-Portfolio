@@ -1,0 +1,275 @@
+.skills {
+  padding: $spacing-16 0;
+  background-color: $slate-50;
+  border-radius: $rounded-lg;
+
+  @include md {
+    padding: $spacing-24 0;
+  }
+
+  @include dark-mode {
+    background-color: $dark-bg-800;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-12;
+
+    &__title {
+      font-size: $text-3xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-4;
+      color: $gray-800;
+
+      @include md {
+        font-size: $text-4xl;
+      }
+
+      @include dark-mode {
+        color: $white;
+      }
+
+      &__highlight {
+        color: $blue-600;
+
+        @include dark-mode {
+          color: $purple-400;
+        }
+      }
+    }
+
+    &__description {
+      color: $gray-600;
+      max-width: 36rem;
+      margin: 0 auto;
+
+      @include dark-mode {
+        color: $gray-400;
+      }
+    }
+
+    &__underline {
+      width: 5rem;
+      height: 0.25rem;
+      background-color: $blue-600;
+      margin: $spacing-6 auto 0;
+
+      @include dark-mode {
+        background-color: $purple-400;
+      }
+    }
+  }
+
+  &__categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $spacing-10;
+    overflow-x: auto;
+    padding-bottom: $spacing-2;
+
+    &__container {
+      display: flex;
+      gap: $spacing-2;
+    }
+
+    &__button {
+      padding: $spacing-2 $spacing-4;
+      border-radius: $rounded-lg;
+      white-space: nowrap;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: $white;
+      color: $gray-700;
+
+      &:hover {
+        background-color: $blue-50;
+      }
+
+      &--active {
+        background-color: $blue-600;
+        color: $white;
+
+        &:hover {
+          background-color: $blue-600;
+        }
+
+        @include dark-mode {
+          background-color: $purple-600;
+
+          &:hover {
+            background-color: $purple-600;
+          }
+        }
+      }
+
+      @include dark-mode {
+        background-color: $dark-bg-700;
+        color: $gray-300;
+
+        &:hover {
+          background-color: $dark-bg-600;
+        }
+      }
+    }
+  }
+
+  &__content {
+    max-width: 48rem;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: $rounded-lg;
+    box-shadow: $shadow;
+    padding: $spacing-8;
+
+    @include dark-mode {
+      background-color: $dark-bg-700;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: $spacing-4 $spacing-10;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__bar {
+    margin-bottom: $spacing-5;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $spacing-2;
+
+      &__name {
+        color: $gray-700;
+        font-weight: $font-medium;
+
+        @include dark-mode {
+          color: $gray-300;
+        }
+      }
+
+      &__level {
+        font-size: $text-xs;
+        font-weight: $font-medium;
+        color: $gray-500;
+
+        @include dark-mode {
+          color: $gray-400;
+        }
+      }
+    }
+
+    &__track {
+      height: 0.625rem;
+      background-color: $gray-200;
+      border-radius: $rounded-full;
+      overflow: hidden;
+
+      @include dark-mode {
+        background-color: $dark-bg-700;
+      }
+    }
+
+    &__fill {
+      height: 100%;
+      border-radius: $rounded-full;
+
+      &--languages {
+        background-color: $blue-600;
+
+        @include dark-mode {
+          background-color: $blue-500;
+        }
+      }
+
+      &--frontend {
+        background-color: $green-600;
+
+        @include dark-mode {
+          background-color: $green-500;
+        }
+      }
+
+      &--backend {
+        background-color: $purple-600;
+
+        @include dark-mode {
+          background-color: $purple-500;
+        }
+      }
+
+      &--database {
+        background-color: $yellow-600;
+
+        @include dark-mode {
+          background-color: $yellow-500;
+        }
+      }
+
+      &--devops {
+        background-color: $red-600;
+
+        @include dark-mode {
+          background-color: $red-500;
+        }
+      }
+    }
+  }
+
+  &__other {
+    margin-top: $spacing-16;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title {
+      font-size: $text-2xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-6;
+      text-align: center;
+      color: $gray-800;
+
+      @include dark-mode {
+        color: $white;
+      }
+    }
+
+    &__grid {
+      display: grid;
+      gap: $spacing-4;
+      grid-template-columns: repeat(2, 1fr);
+
+      @include sm {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include md {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    &__item {
+      background-color: $white;
+      border-radius: $rounded-lg;
+      padding: $spacing-4;
+      text-align: center;
+      box-shadow: $shadow;
+
+      @include dark-mode {
+        background-color: $dark-bg-700;
+      }
+
+      &__text {
+        color: $gray-700;
+
+        @include dark-mode {
+          color: $gray-200;
+        }
+      }
+    }
+  }
+}

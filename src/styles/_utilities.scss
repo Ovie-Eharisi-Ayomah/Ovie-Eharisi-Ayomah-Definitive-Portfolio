@@ -1,0 +1,572 @@
+// Text utilities
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Spacing utilities
+.mt-1 { margin-top: $spacing-1; }
+.mt-2 { margin-top: $spacing-2; }
+.mt-3 { margin-top: $spacing-3; }
+.mt-4 { margin-top: $spacing-4; }
+.mt-5 { margin-top: $spacing-5; }
+.mt-6 { margin-top: $spacing-6; }
+.mt-8 { margin-top: $spacing-8; }
+.mt-10 { margin-top: $spacing-10; }
+.mt-12 { margin-top: $spacing-12; }
+.mt-16 { margin-top: $spacing-16; }
+
+.mb-1 { margin-bottom: $spacing-1; }
+.mb-2 { margin-bottom: $spacing-2; }
+.mb-3 { margin-bottom: $spacing-3; }
+.mb-4 { margin-bottom: $spacing-4; }
+.mb-5 { margin-bottom: $spacing-5; }
+.mb-6 { margin-bottom: $spacing-6; }
+.mb-8 { margin-bottom: $spacing-8; }
+.mb-10 { margin-bottom: $spacing-10; }
+.mb-12 { margin-bottom: $spacing-12; }
+
+.ml-1 { margin-left: $spacing-1; }
+.ml-2 { margin-left: $spacing-2; }
+.ml-3 { margin-left: $spacing-3; }
+.ml-4 { margin-left: $spacing-4; }
+
+.mr-1 { margin-right: $spacing-1; }
+.mr-2 { margin-right: $spacing-2; }
+.mr-3 { margin-right: $spacing-3; }
+.mr-4 { margin-right: $spacing-4; }
+
+.mx-auto { 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.p-1 { padding: $spacing-1; }
+.p-2 { padding: $spacing-2; }
+.p-3 { padding: $spacing-3; }
+.p-4 { padding: $spacing-4; }
+.p-6 { padding: $spacing-6; }
+.p-8 { padding: $spacing-8; }
+
+.px-1 { padding-left: $spacing-1; padding-right: $spacing-1; }
+.px-2 { padding-left: $spacing-2; padding-right: $spacing-2; }
+.px-3 { padding-left: $spacing-3; padding-right: $spacing-3; }
+.px-4 { padding-left: $spacing-4; padding-right: $spacing-4; }
+.px-5 { padding-left: $spacing-5; padding-right: $spacing-5; }
+.px-6 { padding-left: $spacing-6; padding-right: $spacing-6; }
+
+.py-1 { padding-top: $spacing-1; padding-bottom: $spacing-1; }
+.py-2 { padding-top: $spacing-2; padding-bottom: $spacing-2; }
+.py-3 { padding-top: $spacing-3; padding-bottom: $spacing-3; }
+.py-4 { padding-top: $spacing-4; padding-bottom: $spacing-4; }
+.py-6 { padding-top: $spacing-6; padding-bottom: $spacing-6; }
+.py-8 { padding-top: $spacing-8; padding-bottom: $spacing-8; }
+.py-16 { padding-top: $spacing-16; padding-bottom: $spacing-16; }
+.py-20 { padding-top: $spacing-20; padding-bottom: $spacing-20; }
+
+// Flex utilities
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.gap-2 {
+  gap: $spacing-2;
+}
+
+.gap-3 {
+  gap: $spacing-3;
+}
+
+.gap-4 {
+  gap: $spacing-4;
+}
+
+.gap-6 {
+  gap: $spacing-6;
+}
+
+.gap-8 {
+  gap: $spacing-8;
+}
+
+.gap-10 {
+  gap: $spacing-10;
+}
+
+.gap-12 {
+  gap: $spacing-12;
+}
+
+// Grid utilities
+.grid {
+  display: grid;
+}
+
+// Display utilities
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+// Size utilities
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+// Background colors
+.bg-white {
+  background-color: $white;
+  
+  @include dark-mode {
+    background-color: $dark-bg-800;
+  }
+}
+
+.bg-slate-50 {
+  background-color: $slate-50;
+  
+  @include dark-mode {
+    background-color: $dark-bg-800;
+  }
+}
+
+.bg-slate-100 {
+  background-color: $slate-100;
+  
+  @include dark-mode {
+    background-color: $dark-bg-700;
+  }
+}
+
+.bg-blue-50 {
+  background-color: $blue-50;
+  
+  @include dark-mode {
+    background-color: $dark-bg-700;
+  }
+}
+
+.bg-blue-100 {
+  background-color: $blue-100;
+  
+  @include dark-mode {
+    background-color: $dark-bg-600;
+  }
+}
+
+.bg-blue-600 {
+  background-color: $blue-600;
+  
+  @include dark-mode {
+    background-color: $purple-600;
+  }
+}
+
+.bg-blue-700 {
+  background-color: $blue-700;
+  
+  @include dark-mode {
+    background-color: $purple-700;
+  }
+}
+
+.bg-green-100 {
+  background-color: $green-100;
+  
+  @include dark-mode {
+    background-color: rgba($green-900, 0.3);
+  }
+}
+
+// Text colors
+.text-white {
+  color: $white;
+}
+
+.text-gray-300 {
+  color: $gray-300;
+  
+  @include dark-mode {
+    color: $gray-300;
+  }
+}
+
+.text-gray-400 {
+  color: $gray-400;
+  
+  @include dark-mode {
+    color: $gray-400;
+  }
+}
+
+.text-gray-500 {
+  color: $gray-500;
+  
+  @include dark-mode {
+    color: $gray-400;
+  }
+}
+
+.text-gray-600 {
+  color: $gray-600;
+  
+  @include dark-mode {
+    color: $gray-400;
+  }
+}
+
+.text-gray-700 {
+  color: $gray-700;
+  
+  @include dark-mode {
+    color: $gray-300;
+  }
+}
+
+.text-gray-800 {
+  color: $gray-800;
+  
+  @include dark-mode {
+    color: $white;
+  }
+}
+
+.text-blue-600 {
+  color: $blue-600;
+  
+  @include dark-mode {
+    color: $purple-400;
+  }
+}
+
+.text-blue-700 {
+  color: $blue-700;
+  
+  @include dark-mode {
+    color: $purple-400;
+  }
+}
+
+.text-green-700 {
+  color: $green-600;
+  
+  @include dark-mode {
+    color: $green-500;
+  }
+}
+
+// Font utilities
+.font-medium {
+  font-weight: $font-medium;
+}
+
+.font-semibold {
+  font-weight: $font-semibold;
+}
+
+.font-bold {
+  font-weight: $font-bold;
+}
+
+.text-xs {
+  font-size: $text-xs;
+}
+
+.text-sm {
+  font-size: $text-sm;
+}
+
+.text-base {
+  font-size: $text-base;
+}
+
+.text-lg {
+  font-size: $text-lg;
+}
+
+.text-xl {
+  font-size: $text-xl;
+}
+
+.text-2xl {
+  font-size: $text-2xl;
+}
+
+.text-3xl {
+  font-size: $text-3xl;
+}
+
+.text-4xl {
+  font-size: $text-4xl;
+}
+
+.text-5xl {
+  font-size: $text-5xl;
+}
+
+.text-6xl {
+  font-size: $text-6xl;
+}
+
+// Border utilities
+.rounded-full {
+  border-radius: $rounded-full;
+}
+
+.rounded-lg {
+  border-radius: $rounded-lg;
+}
+
+.rounded-md {
+  border-radius: $rounded-md;
+}
+
+.border {
+  border: 1px solid $gray-300;
+  
+  @include dark-mode {
+    border-color: $gray-600;
+  }
+}
+
+.border-l {
+  border-left: 1px solid $gray-300;
+  
+  @include dark-mode {
+    border-left-color: $gray-600;
+  }
+}
+
+.border-b {
+  border-bottom: 1px solid $gray-300;
+  
+  @include dark-mode {
+    border-bottom-color: $gray-600;
+  }
+}
+
+.border-blue-600 {
+  border-color: $blue-600;
+  
+  @include dark-mode {
+    border-color: $purple-400;
+  }
+}
+
+.border-gray-200 {
+  border-color: $gray-200;
+  
+  @include dark-mode {
+    border-color: $gray-700;
+  }
+}
+
+.border-gray-300 {
+  border-color: $gray-300;
+  
+  @include dark-mode {
+    border-color: $gray-600;
+  }
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+// Shadow utilities
+.shadow-sm {
+  box-shadow: $shadow-sm;
+}
+
+.shadow-md {
+  box-shadow: $shadow-md;
+}
+
+.shadow-lg {
+  box-shadow: $shadow-lg;
+}
+
+// Other utilities
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.space-y-3 > * + * {
+  margin-top: $spacing-3;
+}
+
+.space-y-4 > * + * {
+  margin-top: $spacing-4;
+}
+
+.space-y-6 > * + * {
+  margin-top: $spacing-6;
+}
+
+.space-y-8 > * + * {
+  margin-top: $spacing-8;
+}
+
+.space-x-2 > * + * {
+  margin-left: $spacing-2;
+}
+
+.space-x-4 > * + * {
+  margin-left: $spacing-4;
+}
+
+.space-x-6 > * + * {
+  margin-left: $spacing-6;
+}
+
+// Animation utilities
+.transition-colors {
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.hover\:bg-blue-100:hover {
+  background-color: $blue-100;
+  
+  @include dark-mode {
+    background-color: $dark-bg-600;
+  }
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: $blue-700;
+  
+  @include dark-mode {
+    background-color: $purple-700;
+  }
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: $gray-100;
+  
+  @include dark-mode {
+    background-color: $dark-bg-700;
+  }
+}
+
+.hover\:bg-gray-700:hover {
+  background-color: $gray-700;
+  
+  @include dark-mode {
+    background-color: $dark-bg-600;
+  }
+}
+
+.hover\:text-blue-600:hover {
+  color: $blue-600;
+  
+  @include dark-mode {
+    color: $purple-400;
+  }
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: $shadow-lg;
+}
+
+.hover\:-translate-y-1:hover {
+  transform: translateY(-0.25rem);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}

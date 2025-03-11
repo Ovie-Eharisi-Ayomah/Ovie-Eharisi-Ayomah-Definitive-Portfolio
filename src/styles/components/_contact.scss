@@ -1,0 +1,361 @@
+.contact {
+  padding: $spacing-16 0;
+  background-color: $slate-50;
+  border-radius: $rounded-lg;
+
+  @include md {
+    padding: $spacing-24 0;
+  }
+
+  @include dark-mode {
+    background-color: $dark-bg-800;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-12;
+
+    &__title {
+      font-size: $text-3xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-4;
+      color: $gray-800;
+
+      @include md {
+        font-size: $text-4xl;
+      }
+
+      @include dark-mode {
+        color: $white;
+      }
+
+      &__highlight {
+        color: $blue-600;
+
+        @include dark-mode {
+          color: $purple-400;
+        }
+      }
+    }
+
+    &__description {
+      color: $gray-600;
+      max-width: 36rem;
+      margin: 0 auto;
+
+      @include dark-mode {
+        color: $gray-400;
+      }
+    }
+
+    &__underline {
+      width: 5rem;
+      height: 0.25rem;
+      background-color: $blue-600;
+      margin: $spacing-6 auto 0;
+
+      @include dark-mode {
+        background-color: $purple-400;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: $spacing-10;
+    max-width: 72rem;
+    margin: 0 auto;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__info {
+    background-color: $white;
+    border-radius: $rounded-lg;
+    box-shadow: $shadow-md;
+    padding: $spacing-8;
+
+    @include dark-mode {
+      background-color: $dark-bg-700;
+    }
+
+    &__title {
+      font-size: $text-2xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-6;
+      color: $gray-800;
+
+      @include dark-mode {
+        color: $white;
+      }
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-6;
+    }
+
+    &__item {
+      display: flex;
+      align-items: flex-start;
+
+      &__icon {
+        background-color: $blue-100;
+        padding: $spacing-3;
+        border-radius: $rounded-lg;
+        margin-right: $spacing-4;
+
+        svg {
+          color: $blue-600;
+        }
+
+        @include dark-mode {
+          background-color: $dark-bg-600;
+
+          svg {
+            color: $purple-400;
+          }
+        }
+      }
+
+      &__content {
+        &__title {
+          font-size: $text-lg;
+          font-weight: $font-semibold;
+          color: $gray-800;
+          margin-bottom: 0.25rem;
+
+          @include dark-mode {
+            color: $white;
+          }
+        }
+
+        &__value {
+          color: $gray-600;
+
+          @include dark-mode {
+            color: $gray-300;
+          }
+
+          &:hover {
+            color: $blue-600;
+
+            @include dark-mode {
+              color: $purple-400;
+            }
+          }
+        }
+      }
+    }
+
+    &__social {
+      margin-top: $spacing-10;
+
+      &__title {
+        font-size: $text-lg;
+        font-weight: $font-semibold;
+        color: $gray-800;
+        margin-bottom: $spacing-4;
+
+        @include dark-mode {
+          color: $white;
+        }
+      }
+
+      &__links {
+        display: flex;
+        gap: $spacing-4;
+      }
+
+      &__link {
+        background-color: $gray-100;
+        padding: $spacing-3;
+        border-radius: $rounded-lg;
+        transition: background-color 0.3s;
+
+        svg {
+          color: $gray-700;
+        }
+
+        &:hover {
+          background-color: $blue-100;
+        }
+
+        @include dark-mode {
+          background-color: $dark-bg-600;
+
+          svg {
+            color: $gray-300;
+          }
+
+          &:hover {
+            background-color: $dark-bg-500;
+          }
+        }
+      }
+    }
+  }
+
+  &__form {
+    background-color: $white;
+    border-radius: $rounded-lg;
+    box-shadow: $shadow-md;
+    padding: $spacing-8;
+
+    @include dark-mode {
+      background-color: $dark-bg-700;
+    }
+
+    &__title {
+      font-size: $text-2xl;
+      font-weight: $font-bold;
+      margin-bottom: $spacing-6;
+      color: $gray-800;
+
+      @include dark-mode {
+        color: $white;
+      }
+    }
+
+    &__success {
+      background-color: $green-100;
+      border: 1px solid $green-200;
+      color: $green-600;
+      padding: $spacing-4;
+      border-radius: $rounded-lg;
+      margin-bottom: $spacing-6;
+
+      @include dark-mode {
+        background-color: rgba($green-900, 0.3);
+        border-color: $green-800;
+        color: $green-300;
+      }
+    }
+
+    &__grid {
+      display: grid;
+      gap: $spacing-6;
+    }
+
+    &__group {
+      &__label {
+        display: block;
+        font-size: $text-sm;
+        font-weight: $font-medium;
+        color: $gray-700;
+        margin-bottom: $spacing-1;
+
+        @include dark-mode {
+          color: $gray-300;
+        }
+      }
+
+      &__input {
+        width: 100%;
+        padding: $spacing-2 $spacing-4;
+        border: 1px solid $gray-300;
+        border-radius: $rounded-lg;
+        background-color: $white;
+        color: $gray-800;
+        transition: all 0.3s;
+
+        &:focus {
+          border-color: $blue-600;
+          outline: none;
+        }
+
+        @include dark-mode {
+          border-color: $gray-600;
+          background-color: $dark-bg-800;
+          color: $white;
+
+          &:focus {
+            border-color: $purple-400;
+          }
+        }
+      }
+
+      &__textarea {
+        width: 100%;
+        padding: $spacing-2 $spacing-4;
+        border: 1px solid $gray-300;
+        border-radius: $rounded-lg;
+        background-color: $white;
+        color: $gray-800;
+        resize: none;
+        min-height: 8rem;
+        transition: all 0.3s;
+
+        &:focus {
+          border-color: $blue-600;
+          outline: none;
+        }
+
+        @include dark-mode {
+          border-color: $gray-600;
+          background-color: $dark-bg-800;
+          color: $white;
+
+          &:focus {
+            border-color: $purple-400;
+          }
+        }
+      }
+    }
+
+    &__button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: $spacing-3 $spacing-6;
+      background-color: $blue-600;
+      color: $white;
+      border-radius: $rounded-lg;
+      font-weight: $font-medium;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $blue-700;
+      }
+
+      &:disabled {
+        background-color: $gray-400;
+        cursor: not-allowed;
+      }
+
+      svg {
+        margin-right: $spacing-2;
+      }
+
+      @include dark-mode {
+        background-color: $purple-600;
+
+        &:hover {
+          background-color: $purple-700;
+        }
+
+        &:disabled {
+          background-color: $gray-600;
+        }
+      }
+    }
+
+    &__spinner {
+      animation: spin 1s linear infinite;
+      margin-right: $spacing-3;
+      margin-left: -0.25rem;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
