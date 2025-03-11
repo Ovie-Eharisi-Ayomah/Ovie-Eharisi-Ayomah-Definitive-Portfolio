@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="hero__image-container">
           <div className="hero__image">
             <img
-              src="../public/images/hero.jpg"
+              src="/images/hero.jpg"
               alt="Professional Headshot"
             />
           </div>
