@@ -71,7 +71,7 @@ const Resume = () => {
           <div className="resume__header__underline"></div>
           
           <a 
-            href="/resume.pdf" 
+            href="../public/Ovie Eharisi-Ayomah SDCV-4 (2).pdf" 
             target="_blank"
             rel="noopener noreferrer"
             className="resume__header__download"

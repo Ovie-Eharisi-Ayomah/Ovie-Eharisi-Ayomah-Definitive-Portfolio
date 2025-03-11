@@ -21,7 +21,7 @@ const projectsData: Project[] = [
     description: `Crystal Clear is a full-stack web application that connects homeowners with professional window cleaners. 
     The platform streamlines the process of booking window cleaning services, managing quotes, and handling job completion, 
     creating an efficient marketplace for both service providers and customers.`,
-    image: '../public/images/crystalClear.png',
+    image: '/images/crystalClear.png',
     technologies: ['React', 'TypeScript', 'Supabase', 'PostgreSQL', 'CSS Modules'],
     demoUrl: 'https://crystalclearr.netlify.app/',
     githubUrl: 'https://github.com/Ovie-Eharisi-Ayomah/Crystal-Clear3.0.git',
@@ -34,7 +34,7 @@ const projectsData: Project[] = [
     title: 'FaceTrace',
     description: `FaceTrace is a fullstack react app that allows a user to register/sign in and upload an image jpg url. The app then outlines a box around every face in the image. 
     The app leverages Clarifai's face recognition AI API to identify faces in uploaded images. You can also keep track of the number of entries you make.`,
-    image: '../public/images/FaceTrace.png',
+    image: '/images/FaceTrace.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'PostgreSQL'],
     demoUrl: 'https://facetrace.onrender.com/',
     githubUrl: 'https://github.com/Ovie-Eharisi-Ayomah/FaceTrace.git',
@@ -46,7 +46,7 @@ const projectsData: Project[] = [
     id: 3,
     title: 'RoamMates',
     description: 'RoamMates is a full stack web app that allows a user to register/sign in and helps the user connect with prospective travel buddies who share similar interests and preferences.',
-    image: '../public/images/roamMates.png',
+    image: '/images/roamMates.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'PostgreSQL'],
     demoUrl: 'https://www.youtube.com/watch?v=9sq5-AofdZEx',
     githubUrl: 'git@github.com:Ovie-Eharisi-Ayomah/RoamMates.git',
