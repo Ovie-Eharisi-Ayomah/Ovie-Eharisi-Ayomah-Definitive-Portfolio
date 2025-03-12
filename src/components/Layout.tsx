@@ -112,7 +112,7 @@ const Layout = ({ children }: LayoutProps) => {
             <p className="layout__footer__copyright">
               &copy; {new Date().getFullYear()} Portfolio. All rights reserved.
             </p>
-            <div className="layout__footer__links">
+            {/* <div className="layout__footer__links">
               <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="layout__footer__link">
                 GitHub
               </a>
@@ -122,7 +122,7 @@ const Layout = ({ children }: LayoutProps) => {
               <a href="mailto:your.email@example.com" className="layout__footer__link">
                 Email
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
