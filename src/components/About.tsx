@@ -14,16 +14,13 @@ const About = () => {
         <div className="about__content">
           <div>
             <p className="about__text">
-              Hello! I'm <strong>Ovie</strong>, a passionate software developer with a strong focus on creating valuable, 
+              Hello! I'm <strong>Ovie</strong>, a software developer with a strong focus on creating valuable, 
               user-friendly applications. My journey in tech began when I attempted to build an app to make finding locticians easier for my friends and I, 
               and it has now evolved into a professional career building solutions that make a difference.
             </p>
             <p className="about__text">
-              I have a strong commitment to continuous learning and growth. That means I'm always looking for new challenges and opportunities to improve my skills. 
-              When there's a cool problem to solve, I'm willing to learn what I need to solve it and most of the time, I have fun doing it.
-            </p>
-            <p className="about__text">
-              Outside of work, I love to draw, practice combat sports, and read books.
+              I have a strong commitment to deep work, continuous learning, and growth. That means I'm always looking for new challenges and opportunities to improve my skills. 
+              When there's a cool problem to solve, I'm willing to learn what I need to solve it and have fun doing it.
             </p>
           </div>
 

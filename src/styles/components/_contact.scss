@@ -63,11 +63,11 @@
   &__content {
     display: grid;
     gap: $spacing-10;
-    max-width: 72rem;
+    max-width: 36rem;
     margin: 0 auto;
 
     @include md {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
     }
   }
 
