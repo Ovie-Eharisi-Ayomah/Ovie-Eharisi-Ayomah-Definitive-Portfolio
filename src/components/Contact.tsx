@@ -65,7 +65,7 @@ const Contact = () => {
                   <Github size={24} />
                 </a>
                 <a 
-                  href="www.linkedin.com/in/ovie-eharisi-ayomah-241ab41b2" 
+                  href="https://www.linkedin.com/in/ovie-eharisi-ayomah-241ab41b2" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="contact__info__social__link"
